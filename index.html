@@ -53,11 +53,9 @@
 <body>
   <main class="wrap">
     <article class="card">
-      <!-- En-tete principal -->
       <h1>Politique de confidentialite - Audio2text</h1>
-      <p class="meta"><strong>Derniere mise a jour :</strong> 8 mars 2026</p>
+      <p class="meta"><strong>Derniere mise a jour :</strong> 24 mars 2026</p>
 
-      <!-- 1. Responsable -->
       <h2>1. Identite du responsable de traitement</h2>
       <p><strong>Application :</strong> Audio2text</p>
       <p><strong>Package Android :</strong> com.the4runners.audio2text</p>
@@ -65,80 +63,79 @@
       <p><strong>Responsable :</strong> Michel RAHAL</p>
       <p><strong>Contact confidentialite :</strong> rahalmichel@hotmail.fr</p>
 
-      <!-- 2. Objet -->
       <h2>2. Objet</h2>
-      <p>La presente politique explique quelles donnees sont traitees dans l'application Audio2text, pour quelles finalites, avec quels services tiers, et quels sont vos droits.</p>
+      <p>La presente politique explique quelles donnees sont traitees dans l'application Audio2text, pour quelles finalites, avec quels services tiers, selon quelles bases legales, pendant combien de temps, et quels sont vos droits.</p>
 
-      <!-- 3. Donnees traitees -->
       <h2>3. Donnees traitees</h2>
       <p><strong>3.1 Donnees traitees localement sur votre appareil</strong></p>
       <ul>
         <li>Fichiers audio/video selectionnes par l'utilisateur.</li>
         <li>Transcriptions generees.</li>
         <li>Notes, segments et horodatages associes.</li>
-        <li>Preferences de l'application (langue, options, modele, etat de traitement).</li>
-        <li>Informations locales liees au statut premium (ex. jeton d'achat stocke localement, etat d'activation).</li>
+        <li>Preferences de l'application (langue, options de transcription, etat de traitement).</li>
+        <li>Informations locales liees au statut premium.</li>
       </ul>
-      <p>Important : la transcription est effectuee localement sur l'appareil (modele Whisper local). Les contenus audio/video ne sont pas envoyes a nos serveurs pour etre transcrits.</p>
 
-      <p><strong>3.2 Donnees pouvant etre transmises a des services tiers</strong></p>
+      <p><strong>3.2 Donnees traitees via nos services cloud pour la transcription</strong></p>
       <ul>
+        <li>Fichier audio/video selectionne par l'utilisateur, converti temporairement en WAV pour traitement.</li>
+        <li>Identifiant technique de transcription, nom du fichier, statut du job, progression, langue detectee, texte partiel et texte final.</li>
+        <li>Segments et horodatages de mots lorsque l'option correspondante est activee.</li>
+        <li>Parametres de transcription fournis par l'utilisateur, tels que la langue, l'option de traduction, le prompt initial si renseigne, et l'option mot a mot.</li>
+        <li>Identifiant Firebase technique necessaire a l'authentification et a la securisation du service.</li>
+      </ul>
+
+      <p><strong>3.3 Donnees pouvant etre transmises a des services tiers</strong></p>
+      <ul>
+        <li><strong>Google Cloud / Firebase</strong> : authentification, stockage temporaire, orchestration, traitement des transcriptions, metadonnees techniques et infrastructure serveur.</li>
         <li><strong>Google AdMob</strong> : affichage publicitaire, donnees techniques, identifiants publicitaires et signaux publicitaires selon les regles Google.</li>
         <li><strong>Firebase Analytics</strong> : donnees d'usage et statistiques techniques.</li>
-        <li><strong>Firebase Authentication + Cloud Functions + Google Play Developer API</strong> : verification d'achat premium (ID token, purchaseToken, productId).</li>
-        <li><strong>Google Play Billing</strong> : gestion des achats in-app premium.</li>
-        <li><strong>Hugging Face</strong> : telechargement des modeles de transcription.</li>
+        <li><strong>Google Play Billing / Google Play Developer API</strong> : gestion, verification, restauration et controle des achats premium.</li>
       </ul>
 
-      <!-- 4. Finalites -->
       <h2>4. Finalites du traitement</h2>
       <ul>
         <li>Fournir la transcription audio/video et les fonctionnalites de notes/export.</li>
+        <li>Permettre l'envoi au service cloud, le traitement, l'affichage de la progression, l'arret et la reprise d'une transcription.</li>
         <li>Permettre l'achat premium, la restauration et la verification d'achat.</li>
-        <li>Afficher des publicites (version non premium).</li>
-        <li>Mesurer l'usage et ameliorer la stabilite/performance de l'application.</li>
-        <li>Securiser le service et prevenir la fraude.</li>
+        <li>Afficher des publicites dans la version non premium.</li>
+        <li>Mesurer l'usage, ameliorer la stabilite, la performance et la qualite du service.</li>
+        <li>Securiser le service et prevenir les abus, erreurs techniques et fraudes.</li>
       </ul>
 
-      <!-- 5. Bases legales -->
       <h2>5. Bases legales (RGPD)</h2>
-      <p>Selon les cas, les traitements reposent sur l'execution du service demande, l'interet legitime (securite, prevention fraude, amelioration), le respect d'obligations legales, et le consentement lorsque requis.</p>
+      <p>Selon les cas, les traitements reposent sur l'execution du service demande par l'utilisateur, l'interet legitime de l'editeur (securite, prevention de fraude, amelioration du service), le respect d'obligations legales, et le consentement lorsque requis.</p>
 
-      <!-- 6. Destinataires -->
       <h2>6. Destinataires</h2>
-      <p>Les donnees sont accessibles uniquement a l'editeur, dans la limite necessaire, et aux sous-traitants techniques requis (Google, Hugging Face). Aucune vente de donnees personnelles n'est effectuee.</p>
+      <p>Les donnees sont accessibles uniquement a l'editeur, dans la limite necessaire, ainsi qu'aux sous-traitants techniques impliques dans le fonctionnement du service, notamment Google Firebase, Google Cloud, Google Play et AdMob. Aucune vente de donnees personnelles n'est effectuee.</p>
 
-      <!-- 7. Transferts -->
       <h2>7. Transferts hors UE</h2>
-      <p>Certains prestataires peuvent traiter des donnees hors de l'Union europeenne, selon leurs mecanismes juridiques et contractuels applicables.</p>
+      <p>Certains traitements peuvent etre realises sur des infrastructures techniques operes par Google ou ses entites associees, y compris en dehors de l'Union europeenne, selon les mecanismes juridiques et contractuels applicables a ces prestataires.</p>
 
-      <!-- 8. Conservation -->
       <h2>8. Duree de conservation</h2>
       <ul>
         <li>Donnees locales : conservees sur l'appareil jusqu'a suppression par l'utilisateur ou desinstallation.</li>
-        <li>Donnees liees aux achats : conservees le temps necessaire a la verification/gestion du premium et a la prevention de fraude.</li>
-        <li>Donnees des services tiers : selon leurs propres politiques.</li>
+        <li>Fichiers audio/WAV et artefacts techniques de transcription stockes dans le cloud : conserves le temps necessaire au traitement, puis supprimes lorsque la transcription est marquee comme <strong>COMPLETED</strong>.</li>
+        <li>Metadonnees de job de transcription : conservees tant que necessaire pour permettre le suivi, l'arret, la reprise ou la recuperation finale du resultat. Elles peuvent etre supprimees apres finalisation complete du traitement.</li>
+        <li>Journaux techniques et traces d'execution : conserves temporairement a des fins de diagnostic, puis ecrases lors d'une nouvelle transcription ou supprimes apres quelques heures d'inactivite, selon les besoins techniques raisonnables du service.</li>
+        <li>Donnees liees aux achats : conservees pendant la duree necessaire a la verification, a la gestion du premium, a la prevention de fraude et au respect des obligations legales.</li>
+        <li>Donnees des services tiers : selon leurs propres politiques de conservation.</li>
       </ul>
 
-      <!-- 9. Securite -->
       <h2>9. Securite</h2>
-      <p>Les echanges reseau necessaires utilisent des connexions chiffrees (HTTPS). Des mesures techniques raisonnables de securite sont appliquees.</p>
+      <p>Les echanges reseau necessaires utilisent des connexions chiffrees (HTTPS). Des mesures techniques raisonnables de securite sont appliquees pour proteger les donnees traitees localement et via les services cloud.</p>
 
-      <!-- 10. Droits -->
       <h2>10. Vos droits</h2>
-      <p>Conformement au RGPD et a la loi applicable, vous pouvez demander l'acces, la rectification, l'effacement, la limitation, l'opposition et, lorsque applicable, la portabilite.</p>
+      <p>Conformement au RGPD et a la loi applicable, vous pouvez demander l'acces, la rectification, l'effacement, la limitation, l'opposition et, lorsque applicable, la portabilite de vos donnees.</p>
       <p>Pour exercer vos droits : <strong>rahalmichel@hotmail.fr</strong></p>
-      <p>Vous pouvez aussi supprimer les donnees locales via les reglages Android (effacer les donnees) ou en desinstallant l'application.</p>
+      <p>Vous pouvez egalement supprimer les donnees locales via les reglages Android (effacer les donnees) ou en desinstallant l'application.</p>
 
-      <!-- 11. Enfants -->
       <h2>11. Enfants</h2>
       <p>Audio2text n'est pas destinee aux enfants de moins de 13 ans.</p>
 
-      <!-- 12. Modifications -->
       <h2>12. Modifications de la politique</h2>
-      <p>Cette politique peut evoluer. Toute mise a jour sera publiee sur cette page avec la nouvelle date de mise a jour.</p>
+      <p>Cette politique peut evoluer. Toute mise a jour sera publiee sur cette page avec une nouvelle date de mise a jour.</p>
 
-      <!-- 13. Contact -->
       <div class="contact">
         <h2>13. Contact</h2>
         <p>Michel RAHAL</p>
