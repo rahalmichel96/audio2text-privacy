@@ -54,7 +54,8 @@
   <main class="wrap">
     <article class="card">
       <h1>Politique de confidentialite - Audio2text</h1>
-      <p class="meta"><strong>Derniere mise a jour :</strong> 24 mars 2026</p>
+      <p class="meta"><strong>Derniere mise a jour :</strong> 1 avril 2026</p>
+      <!-- Fusion du rebase : on conserve les ajouts RGPD les plus complets et les mentions locales utiles. -->
 
       <h2>1. Identite du responsable de traitement</h2>
       <p><strong>Application :</strong> Audio2text</p>
@@ -70,24 +71,28 @@
       <p><strong>3.1 Donnees traitees localement sur votre appareil</strong></p>
       <ul>
         <li>Fichiers audio/video selectionnes par l'utilisateur.</li>
-        <li>Transcriptions generees.</li>
+        <li>Cache local des transcriptions et des notes synchronisees avec votre compte.</li>
         <li>Notes, segments et horodatages associes.</li>
         <li>Preferences de l'application (langue, options de transcription, etat de traitement).</li>
         <li>Informations locales liees au statut premium.</li>
+        <li>Cache local des informations de compte et du solde de credits.</li>
       </ul>
 
-      <p><strong>3.2 Donnees traitees via nos services cloud pour la transcription</strong></p>
+      <p><strong>3.2 Donnees traitees via nos services cloud pour le compte, les credits et la transcription</strong></p>
       <ul>
+        <li>Donnees de compte : adresse e-mail, prenom, nom, date de naissance, fournisseur de connexion, usages declares de l'application.</li>
+        <li>Wallet de credits associe au compte : formule, credits inclus, credits supplementaires, etat de synchronisation.</li>
+        <li>Transcriptions synchronisees : titre, contenu, statut, segments, horodatages et mots horodates lorsque disponibles.</li>
         <li>Fichier audio/video selectionne par l'utilisateur, converti temporairement en WAV pour traitement.</li>
         <li>Identifiant technique de transcription, nom du fichier, statut du job, progression, langue detectee, texte partiel et texte final.</li>
         <li>Segments et horodatages de mots lorsque l'option correspondante est activee.</li>
         <li>Parametres de transcription fournis par l'utilisateur, tels que la langue, l'option de traduction, le prompt initial si renseigne, et l'option mot a mot.</li>
-        <li>Identifiant Firebase technique necessaire a l'authentification et a la securisation du service.</li>
+        <li>Identifiant Firebase technique necessaire a l'authentification, a la restauration du compte et a la securisation du service.</li>
       </ul>
 
       <p><strong>3.3 Donnees pouvant etre transmises a des services tiers</strong></p>
       <ul>
-        <li><strong>Google Cloud / Firebase</strong> : authentification, stockage temporaire, orchestration, traitement des transcriptions, metadonnees techniques et infrastructure serveur.</li>
+        <li><strong>Google Cloud / Firebase</strong> : authentification, stockage temporaire, stockage des profils et transcriptions synchronisees, orchestration, traitement des transcriptions, metadonnees techniques et infrastructure serveur.</li>
         <li><strong>Google AdMob</strong> : affichage publicitaire, donnees techniques, identifiants publicitaires et signaux publicitaires selon les regles Google.</li>
         <li><strong>Firebase Analytics</strong> : donnees d'usage et statistiques techniques.</li>
         <li><strong>Google Play Billing / Google Play Developer API</strong> : gestion, verification, restauration et controle des achats premium.</li>
@@ -96,8 +101,11 @@
       <h2>4. Finalites du traitement</h2>
       <ul>
         <li>Fournir la transcription audio/video et les fonctionnalites de notes/export.</li>
+        <li>Permettre la creation et la gestion d'un compte utilisateur, la restauration du solde de credits et des transcriptions apres reinstallation, ainsi que l'edition ou la suppression du compte.</li>
         <li>Permettre l'envoi au service cloud, le traitement, l'affichage de la progression, l'arret et la reprise d'une transcription.</li>
         <li>Permettre l'achat premium, la restauration et la verification d'achat.</li>
+        <li>Permettre la synchronisation des credits et transcriptions entre le cloud et l'application.</li>
+        <li>Compiler des statistiques internes sur les usages declares de l'application.</li>
         <li>Afficher des publicites dans la version non premium.</li>
         <li>Mesurer l'usage, ameliorer la stabilite, la performance et la qualite du service.</li>
         <li>Securiser le service et prevenir les abus, erreurs techniques et fraudes.</li>
@@ -107,7 +115,7 @@
       <p>Selon les cas, les traitements reposent sur l'execution du service demande par l'utilisateur, l'interet legitime de l'editeur (securite, prevention de fraude, amelioration du service), le respect d'obligations legales, et le consentement lorsque requis.</p>
 
       <h2>6. Destinataires</h2>
-      <p>Les donnees sont accessibles uniquement a l'editeur, dans la limite necessaire, ainsi qu'aux sous-traitants techniques impliques dans le fonctionnement du service, notamment Google Firebase, Google Cloud, Google Play et AdMob. Aucune vente de donnees personnelles n'est effectuee.</p>
+      <p>Les donnees sont accessibles uniquement a l'editeur, dans la limite necessaire, ainsi qu'aux sous-traitants techniques impliques dans le fonctionnement du service, notamment Google Firebase, Google Cloud, Google Play et AdMob. Les usages declares peuvent etre consultes par l'editeur dans un espace d'administration interne afin d'etablir des statistiques d'usage. Aucune vente de donnees personnelles n'est effectuee.</p>
 
       <h2>7. Transferts hors UE</h2>
       <p>Certains traitements peuvent etre realises sur des infrastructures techniques operes par Google ou ses entites associees, y compris en dehors de l'Union europeenne, selon les mecanismes juridiques et contractuels applicables a ces prestataires.</p>
@@ -116,9 +124,11 @@
       <ul>
         <li>Donnees locales : conservees sur l'appareil jusqu'a suppression par l'utilisateur ou desinstallation.</li>
         <li>Fichiers audio/WAV et artefacts techniques de transcription stockes dans le cloud : conserves le temps necessaire au traitement, puis supprimes lorsque la transcription est marquee comme <strong>COMPLETED</strong>.</li>
-        <li>Metadonnees de job de transcription : conservees tant que necessaire pour permettre le suivi, l'arret, la reprise ou la recuperation finale du resultat. Elles peuvent etre supprimees apres finalisation complete du traitement.</li>
+        <li>Profils de compte, wallet de credits et transcriptions synchronisees : conserves tant que le compte existe ou jusqu'a suppression manuelle par l'utilisateur.</li>
+        <li>Metadonnees de job de transcription : conservees tant que necessaire pour permettre le suivi, l'arret, la reprise ou la recuperation finale du resultat. Elles sont supprimees apres finalisation complete du traitement.</li>
         <li>Journaux techniques et traces d'execution : conserves temporairement a des fins de diagnostic, puis ecrases lors d'une nouvelle transcription ou supprimes apres quelques heures d'inactivite, selon les besoins techniques raisonnables du service.</li>
         <li>Donnees liees aux achats : conservees pendant la duree necessaire a la verification, a la gestion du premium, a la prevention de fraude et au respect des obligations legales.</li>
+        <li>Demandes de suppression de compte et demandes de remboursement associees : conservees le temps necessaire au traitement administratif et legal.</li>
         <li>Donnees des services tiers : selon leurs propres politiques de conservation.</li>
       </ul>
 
@@ -128,7 +138,8 @@
       <h2>10. Vos droits</h2>
       <p>Conformement au RGPD et a la loi applicable, vous pouvez demander l'acces, la rectification, l'effacement, la limitation, l'opposition et, lorsque applicable, la portabilite de vos donnees.</p>
       <p>Pour exercer vos droits : <strong>rahalmichel@hotmail.fr</strong></p>
-      <p>Vous pouvez egalement supprimer les donnees locales via les reglages Android (effacer les donnees) ou en desinstallant l'application.</p>
+      <p>Vous pouvez egalement supprimer votre compte depuis l'application. Cette action efface les donnees associees stockees dans le cloud et peut declencher une demande de remboursement des credits restants selon les conditions annoncees au moment de la suppression.</p>
+      <p>Vous pouvez supprimer les donnees locales via les reglages Android (effacer les donnees) ou en desinstallant l'application, mais la suppression du compte reste necessaire pour effacer les donnees synchronisees dans le cloud.</p>
 
       <h2>11. Enfants</h2>
       <p>Audio2text n'est pas destinee aux enfants de moins de 13 ans.</p>
